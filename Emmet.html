@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmets</title>
+</head>
+
+<body>
+    <!-- Sibling: + -->
+    <!-- header+main+footer -->
+    <header>This is a Header</header>
+    <main>This content from main tag</main>
+    <footer>This is footer</footer>
+
+    <!-- Child: > -->
+    <!-- nav>ul>li -->
+    <nav>
+        <ul>
+            <li>Home</li>
+        </ul>
+    </nav>
+
+    <!-- Multiplication: * -->
+    <!-- ul>li*5 -->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Courses</li>
+        <li>Contact Us</li>
+    </ul>
+
+
+    <!-- Text: {} -->
+
+    <!-- h2{MSK Institute} -->
+    <h2>MSK Institute</h2>
+
+    <!-- ul>li{box}*3 or ul>li*3{box}  -->
+    <ul>
+        <li>Box</li>
+        <li>Box</li>
+        <li>Box</li>
+    </ul>
+
+    <!-- Numbering: $ -->
+    <!-- ul>li*5{$} -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <!-- ul>li*5{Box $} -->
+    <ul>
+        <li>Box 1</li>
+        <li>Box 2</li>
+        <li>Box 3</li>
+        <li>Box 4</li>
+        <li>Box 5</li>
+    </ul>
+
+    <!-- Attributes: [] -->
+
+    <!-- h1[title="Mr Sumit Kumar"]{MSK} -->
+    <h1 title="MR Sumit Kumar">MSK</h1>
+
+    <!-- h$[title=topic$]{Heading $}*6 -->
+    <h1 title="topic1">Heading 1</h1>
+    <h2 title="topic2">Heading 2</h2>
+    <h3 title="topic3">Heading 3</h3>
+    <h4 title="topic4">Heading 4</h4>
+    <h5 title="topic5">Heading 5</h5>
+    <h6 title="topic6">Heading 6</h6>
+
+    <!-- input[placeholder="Enter Your Name:"] -->
+    <input type="text" placeholder="Enter Your Name">
+
+    <!-- Create Classes & ID with Emmets -->
+
+    <!-- Class: . -->
+
+    <!-- ul>li.box$*5{Box} -->
+    <ul>
+        <li class="box1">Box</li>
+        <li class="box2">Box</li>
+        <li class="box3">Box</li>
+        <li class="box4">Box</li>
+        <li class="box5">Box</li>
+    </ul>
+
+    <!-- ul>li.item$@-*5 -->
+    <ul>
+        <li class="item5"></li>
+        <li class="item4"></li>
+        <li class="item3"></li>
+        <li class="item2"></li>
+        <li class="item1"></li>
+    </ul>
+
+    <!-- ul>li.item$@6*5 -->
+    <ul>
+        <li class="item6"></li>
+        <li class="item7"></li>
+        <li class="item8"></li>
+        <li class="item9"></li>
+        <li class="item10"></li>
+    </ul>
+
+    <!-- ul>li.box.box${Box}*5 -->
+    <ul>
+        <li class="box box1">Box</li>
+        <li class="box box2">Box</li>
+        <li class="box box3">Box</li>
+        <li class="box box4">Box</li>
+        <li class="box box5">Box</li>
+    </ul>
+
+    <!-- Bootstrap Class with Emmets -->
+
+    <!-- .container -->
+    <div class="container"></div>
+
+    <!-- ul>li.btn.btn-primary -->
+    <ul>
+        <li class="btn btn-primary"></li>
+    </ul>
+
+
+    <!-- .flex>.item*6 -->
+    <div class="flex">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    
+    <!-- ID: # -->
+
+    <!-- .container>#box1 -->
+    <div class="container">
+        <div id="box1"></div>
+    </div>
+
+    <!-- Grouping: () -->
+    <!-- div>(header>ul>li*3>a{item})+(footer>h2{Welcome}+p{lorem4}) -->
+    <div>
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </header>
+        <footer>
+            <h2>Welcome </h2>
+            <p>lorem4</p>
+        </footer>
+    </div>
+
+    <!-- Back one step: ^ -->
+    <!-- div>(header>ul>li*3>a)+footer>h2{Hello}^p{lorem} -->
+    <div>
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </header>
+        <footer>
+            <h2>Hello</h2>
+        </footer>
+        <p>lorem</p>
+    </div>
+
+    <!-- Implicit tag names -->
+
+    <!-- .className -->
+    <div class="className"></div>
+
+    <!-- h3.className -->
+    <h3 class="className"></h3>
+
+    <!-- Form -->
+
+    <!-- form -->
+    <form action=""></form>
+
+    <!-- form:po -->
+    <form action="" method="post"></form>
+
+</body>
+</html>
